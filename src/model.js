@@ -73,7 +73,7 @@ const xput = async (req, res, next) => {
 				_expiry: helper.getExpiryDate(),
 				data: req.body
 			});
-			res.json({ Record: record, message: 'Record updated.' });
+			res.json({ message: 'Record updated.' });
 		} else {
 			res.status(400).json({ message: 'Invalid record Id' });
 		}
